@@ -10,7 +10,7 @@ This project is an example on how to use ZF2 Paginator and Doctrine 2 together.
 3. Update composer (optional): `php composer.phar self-update`
 4. Run composer: `php composer.phar install`
 5. Create a local.php file on `config/autoload` folder and insert your database credentials
-```
+    ```
 <?php
 return array(
     'doctrine' => array(

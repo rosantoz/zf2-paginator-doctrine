@@ -5,11 +5,11 @@ This project is an example on how to use ZF2 Paginator and Doctrine 2 together.
 
 # Installation
 
-1 - Clone this project by typing `https://github.com/rosantoz/zf2-paginator-doctrine` on your terminal;
-2 - Enter the project directory: `cd zf2-paginator-doctrine`
-3 - Update composer (optional): `php composer.phar self-update`
-4 - Run composer: `php composer.phar install`
-5 - Create a local.php file on `config/autoload` folder and insert your database credentials
+1. Clone this project by typing `https://github.com/rosantoz/zf2-paginator-doctrine` on your terminal;
+2. Enter the project directory: `cd zf2-paginator-doctrine`
+3. Update composer (optional): `php composer.phar self-update`
+4. Run composer: `php composer.phar install`
+5. Create a local.php file on `config/autoload` folder and insert your database credentials
 ```
 <?php
 return array(
@@ -30,8 +30,8 @@ return array(
     )
 );
 ```
-6 - Use doctrine command line tool to create the database table `php public/index.php orm:schema-tool:create`
-7 - Use doctrine command line tool to create data fixtures `php public/index.php data-fixture:import`
+6. Use doctrine command line tool to create the database table `php public/index.php orm:schema-tool:create`
+7. Use doctrine command line tool to create data fixtures `php public/index.php data-fixture:import`
 
 
 # Read more

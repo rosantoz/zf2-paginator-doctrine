@@ -1,0 +1,58 @@
+<div class="row paginator">
+    <div class="col-sm-6 col-xs-12 col-md-12 margin-bottom-20">
+        Showing <?php echo $this->firstItemNumber ?>
+        to <?php echo $this->lastItemNumber ?>
+        of <?php echo $this->totalItemCount ?> entries
+    </div>
+    <?php if ($this->pageCount > 1): ?>
+        <div class="col-sm-6 col-xs-12 col-md-12">
+            <div class="pull-right">
+                <ul class="pagination">
+                    <!-- Previous page link -->
+                    <?php if (isset($this->previous)): ?>
+                        <li>
+                            <a href="<?php echo $this->url('application/pagination', array('page' => $this->previous)); ?>">
+                                <<
+                            </a>
+                        </li>
+                    <?php else: ?>
+                        <li class="disabled">
+                            <a>
+                                <<
+                            </a>
+                        </li>
+                    <?php endif; ?>
+                    <!-- Numbered page links -->
+                    <?php foreach ($this->pagesInRange as $page): ?>
+                        <?php if ($page != $this->current): ?>
+                            <li>
+                                <a href="<?php echo $this->url('application/pagination', array('page' => $page)); ?>">
+                                    <?php echo $page; ?>
+                                </a>
+                            </li>
+                        <?php else: ?>
+                            <li class="active">
+                                <a><?php echo $page; ?></a>
+                            </li>
+                        <?php endif; ?>
+                    <?php endforeach; ?>
+
+                    <!-- Next page link -->
+                    <?php if (isset($this->next)): ?>
+                        <li>
+                            <a href="<?php echo $this->url('application/pagination', array('page' => $this->next)); ?>">
+                                >>
+                            </a>
+                        </li>
+                    <?php else: ?>
+                        <li class="disabled">
+                            <a>
+                                >>
+                            </a>
+                        </li>
+                    <?php endif; ?>
+                </ul>
+            </div>
+        </div>
+    <?php endif; ?>
+</div>

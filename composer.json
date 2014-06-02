@@ -1,0 +1,11 @@
+{
+    "name"       : "rosantoz/zf2-doctrine-paginator-example",
+    "description": "ZF2 and Doctrine Paginator example",
+    "license"    : "BSD-3-Clause",
+    "require"    : {
+        "php"                                  : ">=5.3.3",
+        "zendframework/zendframework"          : "2.3.*",
+        "doctrine/doctrine-orm-module"         : "0.*",
+        "hounddog/doctrine-data-fixture-module": "0.0.*"
+    }
+}

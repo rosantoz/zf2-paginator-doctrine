@@ -36,7 +36,7 @@ return array(
 
 # Read more
 
-For a more detailed explanation go to [insert blog post url]
+For a more detailed explanation go to http://blog.dossantos.com.au/using-zf2-paginator-plus-doctrine-2
 
 
 @todo update instructions

@@ -37,20 +37,3 @@ return array(
 # Read more
 
 For a more detailed explanation go to http://blog.dossantos.com.au/using-zf2-paginator-plus-doctrine-2
-
-
-@todo update instructions
-
-for the blog post:
-
-1 - Create Adapter on module/Application/src/Application/Paginator/Adapter
-2 - Create paginator service on module/Application/Module.php
-3 - Create User Repository and implement method count and getItems
-4 - Call paginator service on your controller
-5 - Implement view
-6 - Create partial file to show paginator links (add to view_manager on module.config)
-7 - Create application/paginator route
-
-for github:
-
-
